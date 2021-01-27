@@ -50,7 +50,7 @@ public class App {
                 + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
         		+ "<center>Ingrese los numeros separados por una coma sin espacios. (Ejemplo: 1,2,3,4,5)</center>"
         	    + "</div>"
-                + "<input type=\"text\" name=\"Datos\">"
+                + "<input style=\"width:50px ; font-size:150% ; position:absolute ; top:330px ; left:300px\" type=\"text\" name=\"Datos\">"
                 + "<br><br>"
                 + "<input type=\"submit\" value=\"Submit\">"
                 + "</form>"
