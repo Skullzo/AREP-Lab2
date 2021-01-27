@@ -9,7 +9,7 @@ Para la realización y ejecución tanto del programa como de las pruebas de este
 Para descargar el proyecto de GitHub, primero debemos clonar este repositorio, ejecutando la siguiente línea de comando en GIT.
 
 ```
-git clone https://github.com/Skullzo/AREP-Lab1.git
+git clone https://github.com/Skullzo/AREP-Lab2.git
 ```
 
 ## Ejecución
