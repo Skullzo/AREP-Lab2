@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.escuelaing.arep.app"},{"l":"edu.escuelaing.arep.app.calculos"},{"l":"edu.escuelaing.arep.app.listas"}];updateSearchResults();
