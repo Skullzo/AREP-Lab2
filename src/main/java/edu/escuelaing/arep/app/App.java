@@ -39,9 +39,11 @@ public class App {
         String pageContent
                 = "<!DOCTYPE html>"
                 + "<html>"
-                + "<title> Calculadora</title>"
+                + "<title>Taller Heroku</title>"
                 + "<body>"
-                + "<h1>Calculadora de la media y desviación estándar</h1>"
+                + "<div style=\"padding:30px; width:100%; background:#4169E1; color:white; font-size:500%;\">"
+        		+ "<center>Laboratorio de Informática</center>"
+        	    + "</div>"
                 + "<form action=\"/results\">"
                 + "Por favor ingrese los datos separados por una coma(\",\"):<br>"
                 + "<input type=\"text\" name=\"Datos\">"
