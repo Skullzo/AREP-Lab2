@@ -6,7 +6,7 @@ import spark.Response;
 import static spark.Spark.*;
 import java.text.DecimalFormat;
 /**
- * Clase encargada de llevar a cabo la ejecucion de todo el programa.
+ * Clase principal encargada de llevar a cabo la ejecucion de todo el programa.
  * @author  Alejandro Toro Daza
  * @version 1.0.  (20 de Enero del 2021) 
  */
@@ -20,13 +20,31 @@ public class App {
         get("/", (req, res) -> inputDataPage(req, res));
         get("/results", (req, res) -> resultsPage(req, res));
     }
+    /**
+     * Metodo encargado de obtener la media y la desviacion estandar (obtenida a traves de la varianza) de los datos ingresados.
+     * @param elementos Parametro que indica los elementos de la lista.
+     */
+    public static String calcular(ListaEnlazada<Double> elementos){
+        DecimalFormat twoDForm = new DecimalFormat("#.##");
+        double media = Calculadora.media(elementos);
+        double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
+        return twoDForm.format(media)+" "+twoDForm.format(desviacionEstandar);
+    }
+   /**
+    * @param req Parametro que se encarga de almacenar la informacion de la peticion.
+    * @param res Parametro que se encarga de almacenar la informacion de la respuesta del servidor.
+    * @return pageContent Retorna la pagina HTML que contiene la interfaz de usuario.
+    */
     private static String inputDataPage(Request req, Response res) {
         String pageContent
                 = "<!DOCTYPE html>"
                 + "<html>"
-                + "<title> Calculadora</title>"
+                + "<title>Taller Heroku</title>"
                 + "<body>"
                 + "<h1>Calculadora de la media y desviación estándar</h1>"
+                + "<div style=\"padding:30px; width:100%; background:#4169E1; color:white; font-size:500%;\">"
+        		+ "<center>Laboratorio de Informática</center>"
+        	    + "</div>"
                 + "<form action=\"/results\">"
                 + "Por favor ingrese los datos separados por una coma(\",\"):<br>"
                 + "<input type=\"text\" name=\"Datos\">"
@@ -38,24 +56,10 @@ public class App {
                 + "</html>";
         return pageContent;
     }
-    /**
-     * Metodo encargado de obtener la media y la desviacion estandar (obtenida a traves de la varianza) de los datos ingresados.
-     * @param elementos Parametro que indica los elementos de la lista.
-     */
-    
-    /**
-    *
-    * @param req Tiene la informacion de la petición.
-    * @param res Tiene la información con la respuesta del servidor.
-    * @return pageContent Contiene la pagina html.
-    */
-   
-
    /**
-    *
-    * @param req Tiene la informacion de la petición.
-    * @param res Tiene la información con la respuesta del servidor.
-    * @return pageResponse Contiene la pagina html.
+    * @param req Parametro que se encarga de almacenar la informacion de la peticion.
+    * @param res Parametro que se encarga de almacenar la informacion de la respuesta del servidor.
+    * @return pageResponse Retorna la pagina HTML que contiene la interfaz de usuario.
     */
    private static String resultsPage(Request req, Response res) {
        ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
@@ -84,25 +88,14 @@ public class App {
                + "</html>";
        return pageResponse;
    }
-   public static String calcular(ListaEnlazada<Double> elementos){
-       DecimalFormat twoDForm = new DecimalFormat("#.##");
-       double media = Calculadora.media(elementos);
-       double desviacionEstandar = Calculadora.desviacionEstandar(elementos);
-       return twoDForm.format(media)+" "+twoDForm.format(desviacionEstandar);
-   }
-
    /**
-    * This method reads the default port as specified by the PORT variable in
-    * the environment.
-    *
-    * Heroku provides the port automatically so you need this to run the
-    * project on Heroku.
-    * @return returns default port if heroku-port isn't set (i.e. on localhost)
+    * Este metodo lee el puerto predeterminado segun lo especificado por la variable PORT en el entorno.
+    * @return returns Retorna el puerto predeterminado si el heroku-port no esta configurado (es decir, en localhost).
     */
    static int getPort() {
        if (System.getenv("PORT") != null) {
            return Integer.parseInt(System.getenv("PORT"));
        }
-       return 4567; //returns default port if heroku-port isn't set (i.e. on localhost)
+       return 4567;
    }
 }
