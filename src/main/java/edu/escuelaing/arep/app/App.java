@@ -15,8 +15,8 @@ public class App {
      * Metodo principal main que se encarga del funcionamiento de toda la clase App.
      * @param args Parametro que indica la lista de los elementos a evaluar.
      */
-    public static void main( String[] args ) {
-    	port(getPort());
+	public static void main(String[] args) {
+        port(getPort());
         get("/", (req, res) -> inputDataPage(req, res));
         get("/results", (req, res) -> resultsPage(req, res));
     }
@@ -58,33 +58,33 @@ public class App {
     * @param res Parametro que se encarga de almacenar la informacion de la respuesta del servidor.
     * @return pageResponse Retorna la pagina HTML que contiene la interfaz de usuario.
     */
-   private static String resultsPage(Request req, Response res) {
-       ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
-       String data = req.queryParams("Datos");
-       String[] lista  = data.split(",");
-       double n;
-       for (String elemento: lista){
-           n = Double.parseDouble(elemento);
-           elementos.add(n);
-       }
-       String[] calculos = calcular(elementos).split(" ");
-       String pageResponse
-               = "<!DOCTYPE html>"
-               + "<html>"
-               + "<title> Calculadora</title>"
-               + "<body>"
-               + "<h1>Resultados de las operaciones:</h1>\n"
-               + "El cálculo de la media de los datos ingresados es: "
-               + calculos[0]
-               + "<br>"
-               + "El cálculo de la desviación estándar de los datos ingresados es: "
-               + calculos[1]
-               + "<br>"
-               + "<a href=\"/\">Volver</a>"
-               + "</body>"
-               + "</html>";
-       return pageResponse;
-   }
+    private static String resultsPage(Request req, Response res) {
+        ListaEnlazada<Double> elementos = new ListaEnlazada<Double>();
+        String data = req.queryParams("Datos");
+        String[] lista  = data.split(",");
+        double n;
+        for (String elemento: lista){
+            n = Double.parseDouble(elemento);
+            elementos.add(n);
+        }
+        String[] calculos = calcular(elementos).split(" ");
+        String pageResponse
+                = "<!DOCTYPE html>"
+                + "<html>"
+                + "<title> Calculadora</title>"
+                + "<body>"
+                + "<h1>Resultados de las operaciones:</h1>\n"
+                + "El cálculo de la media de los datos ingresados es: "
+                + calculos[0]
+                + "<br>"
+                + "El cálculo de la desviación estándar de los datos ingresados es: "
+                + calculos[1]
+                + "<br>"
+                + "<a href=\"/\">Volver</a>"
+                + "</body>"
+                + "</html>";
+        return pageResponse;
+    }
    /**
     * Este metodo lee el puerto predeterminado segun lo especificado por la variable PORT en el entorno.
     * @return returns Retorna el puerto predeterminado si el heroku-port no esta configurado (es decir, en localhost).
