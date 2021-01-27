@@ -47,7 +47,7 @@ public class App {
         		+ "<center>Calculadora de Media y Desviacion Estandar</center>"
         	    + "</div>"
                 + "<form action=\"/results\">"
-                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:200px ; left:0px\">"
+                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:100px ; left:0px\">"
         		+ "<center>Ingrese los numeros separados por una coma sin espacios. (Ejemplo: 1,2,3,4,5)</center>"
         	    + "</div>"
                 + "<input type=\"text\" name=\"Datos\">"
