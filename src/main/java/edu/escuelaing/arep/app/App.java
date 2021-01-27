@@ -52,7 +52,7 @@ public class App {
         	    + "</div>"
                 + "<input style=\"width:500px ; font-size:150% ; position:absolute ; top:237px ; left:720px\" type=\"text\" name=\"Datos\">"
                 + "<br><br>"
-                + "<input style=\"width:510px ; font-size:150% ; position:absolute ; top:270px ; left:720px\" type=\"submit\" value=\"Calcular Media y Desviacion Estandar\">"
+                + "<input style=\"width:509px ; font-size:150% ; position:absolute ; top:272px ; left:720px\" type=\"submit\" value=\"Calcular Media y Desviacion Estandar\">"
                 + "</form>"
                 + "<p>If you click the \"Submit\" button, the form-data will be sent to a page called \"/results\".</p>"
                 + "<br><br>"
