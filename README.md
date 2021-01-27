@@ -39,7 +39,7 @@ Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Si
 ![img](https://github.com/Skullzo/AREP-Lab1/blob/main/img/Pruebas.PNG)
 
 ## Desplegar en Heroku
-Para desplegar el programa en Heroku, realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku.
+Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab2.herokuapp.com/)
 
