@@ -126,7 +126,7 @@ public class App {
                 + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:200%; position:absolute ; top:320px ; left:0px\">"
         		+ "La Desviacion Estandar es:"
         	    + "</div>"
-        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:450px ; left:0px\">"
+        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:417px ; left:0px\">"
                 + calculos[1]
                 + "<br>"
                 + "<a href=\"/\">Regresar a la Pagina Principal</a>"
