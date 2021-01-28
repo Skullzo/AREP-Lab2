@@ -120,7 +120,7 @@ public class App {
         	    + "<br><br>"
         	    + "<br><br>"
         	    + "<br><br>"
-        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:230px ; left:0px\">"
+        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:210px ; left:0px\">"
         	    + calculos[0]
                 + "</div>"
                 + "<br>"
