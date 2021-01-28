@@ -123,7 +123,7 @@ public class App {
         	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:247px ; left:0px\">"
         	    + calculos[0]
                 + "</div>"
-                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:200%; position:absolute ; top:350px ; left:0px\">"
+                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:200%; position:absolute ; top:344px ; left:0px\">"
         		+ "La Desviacion Estandar es:"
         	    + "</div>"
         	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:450px ; left:0px\">"
