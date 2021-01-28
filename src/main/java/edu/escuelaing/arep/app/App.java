@@ -120,7 +120,9 @@ public class App {
         	    + "<br><br>"
         	    + "<br><br>"
         	    + "<br><br>"
+        	    + "<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:500%; position:absolute ; top:300px ; left:0px\">"
                 + calculos[0]
+                + "</div>"
                 + "<br>"
                 + "El cálculo de la desviación estándar de los datos ingresados es: "
                 + calculos[1]
