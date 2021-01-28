@@ -128,7 +128,8 @@ public class App {
         	    + "</div>"
         	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:417px ; left:0px\">"
                 + calculos[1]
-                + "<br>"
+                + "<br><br>"
+                + "<br><br>"
                 + "<a href=\"/\">Regresar a la Pagina Principal</a>"
                 + "</body>"
                 + "</html>";
