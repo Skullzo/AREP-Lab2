@@ -114,6 +114,12 @@ public class App {
         	    + "<br><br>"
         	    + "<br><br>"
         	    + "<br><br>"
+        	    + "<br><br>"
+        	    + "<br><br>"
+        	    + "<br><br>"
+        	    + "<br><br>"
+        	    + "<br><br>"
+        	    + "<br><br>"
                 + calculos[0]
                 + "<br>"
                 + "El cálculo de la desviación estándar de los datos ingresados es: "
