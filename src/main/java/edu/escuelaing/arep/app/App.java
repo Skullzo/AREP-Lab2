@@ -106,7 +106,7 @@ public class App {
                 + "<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:500%; position:absolute ; top:0px ; left:0px\">"
         		+ "<center>Resultados</center>"
         	    + "</div>"
-        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
+        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:200%; position:absolute ; top:150px ; left:0px\">"
         		+ "<center>La Media es:</center>"
         	    + "</div>"
         	    + "<br><br>"
@@ -120,7 +120,7 @@ public class App {
         	    + "<br><br>"
         	    + "<br><br>"
         	    + "<br><br>"
-        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:500%; position:absolute ; top:250px ; left:0px\">"
+        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:230px ; left:0px\">"
                 + calculos[0]
                 + "</div>"
                 + "<br>"
