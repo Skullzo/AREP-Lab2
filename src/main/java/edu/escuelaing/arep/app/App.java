@@ -99,7 +99,7 @@ public class App {
                 = "<!DOCTYPE html>"
                 + "<html>"
                 + "<title>Calculadora de Media y Desviacion Estandar</title>"
-                + "<body style = \"background: url(https://blog.hdwallsource.com/wp-content/uploads/2017/05/desk-calculator-wallpaper-61252-63066-hd-wallpapers.jpg) no-repeat ; background-size: 100% 110%;\">"
+                + "<body style = \"background: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/01/23/16113922006316.jpg) no-repeat ; background-size: 100% 110%;\">"
                 + "</body>"
                 + "<body>"
                 + "<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:500%; position:absolute ; top:0px ; left:0px\">"
@@ -108,9 +108,10 @@ public class App {
         	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
         		+ "<center>La Media es: </center>"
         	    + "</div>"
-                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\"> calculos[0]"
-                + "<br>"
+        	    + calculos[0]
                 + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
+                + "<br>"
+                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:450px ; left:0px\">"
         		+ "<center>La Desviacion Estandar es: </center>"
         	    + "</div>"
                 + calculos[1]
