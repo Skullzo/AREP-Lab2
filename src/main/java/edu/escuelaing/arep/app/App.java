@@ -119,6 +119,7 @@ public class App {
                 + calculos[1]
                 + "<br><br>"
                 + "<a href=\"/\">Regresar a la Pagina Principal</a>"
+                + "</div>"
                 + "<br><br>"
                 + "<br><br>"
                 + "<br><br>"
