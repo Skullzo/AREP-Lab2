@@ -48,7 +48,7 @@ public class App {
         	    + "</div>"
                 + "<form action=\"/results\">"
                 + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
-        		+ "<center>Ingrese los numeros separados por una coma sin espacios. (Ejemplo: 1,2,3,4,5)</center>"
+        		+ "<center>Ingrese los numeros separados por una coma sin espacios.</center>"
         	    + "</div>"
                 + "<input style=\"width:500px ; font-size:150% ; position:absolute ; top:237px ; left:720px\" type=\"text\" name=\"Datos\">"
                 + "<br><br>"
@@ -98,16 +98,24 @@ public class App {
         String pageResponse
                 = "<!DOCTYPE html>"
                 + "<html>"
-                + "<title> Calculadora</title>"
+                + "<title>Calculadora de Media y Desviacion Estandar</title>"
+                + "<body style = \"background: url(https://blog.hdwallsource.com/wp-content/uploads/2017/05/desk-calculator-wallpaper-61252-63066-hd-wallpapers.jpg) no-repeat ; background-size: 100% 110%;\">"
+                + "</body>"
                 + "<body>"
-                + "<h1>Resultados de las operaciones:</h1>\n"
-                + "El cálculo de la media de los datos ingresados es: "
+                + "<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:500%; position:absolute ; top:0px ; left:0px\">"
+        		+ "<center>Resultados</center>"
+        	    + "</div>"
+        	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
+        		+ "<center>La Media es: </center>"
+        	    + "</div>"
                 + calculos[0]
                 + "<br>"
-                + "El cálculo de la desviación estándar de los datos ingresados es: "
+                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
+        		+ "<center>La Desviacion Estandar es: </center>"
+        	    + "</div>"
                 + calculos[1]
                 + "<br>"
-                + "<a href=\"/\">Volver</a>"
+                + "<a href=\"/\">Regresar a la Pagina Principal</a>"
                 + "</body>"
                 + "</html>";
         return pageResponse;
