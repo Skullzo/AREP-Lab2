@@ -108,7 +108,7 @@ public class App {
         	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
         		+ "<center>La Media es: </center>"
         	    + "</div>"
-                + calculos[0]
+                + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\"> calculos[0]"
                 + "<br>"
                 + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:150%; position:absolute ; top:150px ; left:0px\">"
         		+ "<center>La Desviacion Estandar es: </center>"
