@@ -104,7 +104,7 @@ public class App {
                 + "</body>"
                 + "<body>"
                 + "<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:500%; position:absolute ; top:0px ; left:0px\">"
-        		+ "<center>Resultados</center>"
+        		+ "Resultados"
         	    + "</div>"
         	    + "<div style=\"padding:30px; width:96.9%; background:#005a80; color:white; font-size:200%; position:absolute ; top:150px ; left:0px\">"
         		+ "La Media es:"
